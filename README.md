@@ -2,7 +2,7 @@
 
 An npm package for demonstration purposes using TypeScript to build for both the ECMAScript Module format (i.e. ESM or ES Module) and CommonJS Module format (CJS). It can be used in Node.js and browser applications.
 
-Now it's time to make it yours !
+Now it's time to make it yours !!
 
 ## Get Started
 
