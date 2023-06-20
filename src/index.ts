@@ -1,14 +1,23 @@
-export function helloWorld() {
-  const message = 'Hello World from my example modern npm package!';
-  return message;
+export function helloWorld(name: string) {
+  console.log(`Hello, ${name}`);
+
+  return;
 }
 
-export function goodBye() {
-  const message = 'Goodbye from my example modern npm package!';
-  return message;
+export function goodBye(name: string) {
+  console.log(`Bye, ${name}`);
+
+  return;
+}
+
+export function APlusB(a: number, b: number) {
+  console.log(`${a} + ${b} = ${a + b}`);
+
+  return;
 }
 
 export default {
   helloWorld,
   goodBye,
+  APlusB,
 };
