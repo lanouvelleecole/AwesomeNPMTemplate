@@ -75,7 +75,7 @@ npx verdaccio
 Dans 1 autre cmd, execute ceci:
 
 ```
-npm run build; npm version patch --no-git-tag-version; npm publish --registry http://localhost:4873; npx yarn add maslow-gpt-sdk@latest;
+npm run build; npm version patch --no-git-tag-version; npm publish --registry http://localhost:4873; npx yarn add AwesomeNPMTemplate@latest;
 ```
 
 ## pour retourner en mode npm 'normal'
