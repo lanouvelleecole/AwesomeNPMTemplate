@@ -1,23 +1,9 @@
-export function helloWorld(name: string) {
-  console.log(`Hello, ${name}`);
+/* PLOP_INJECT_IMPORT */
 
-  return;
-}
+import { helloWorld } from "./services/HelloWorld/helloWorld";
 
-export function goodBye(name: string) {
-  console.log(`Bye, ${name}`);
+export {
+  /* PLOP_INJECT_SDK_METHOD */
 
-  return;
-}
-
-export function APlusB(a: number, b: number) {
-  console.log(`${a} + ${b} = ${a + b}`);
-
-  return;
-}
-
-export default {
   helloWorld,
-  goodBye,
-  APlusB,
 };
