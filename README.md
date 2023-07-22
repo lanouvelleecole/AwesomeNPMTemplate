@@ -75,7 +75,13 @@ npx verdaccio
 Dans 1 autre cmd, execute ceci:
 
 ```
-npm run build; npm version patch --no-git-tag-version; npm publish --registry http://localhost:4873; npx yarn add AwesomeNPMTemplate@latest;
+npm run build; npm version patch --no-git-tag-version; npm publish --registry http://localhost:4873;
+```
+
+Une fois publié, tu peux l'installer la ou tu veux
+
+```
+npx yarn add AwesomeNPMTemplate@latest
 ```
 
 ## pour retourner en mode npm 'normal'

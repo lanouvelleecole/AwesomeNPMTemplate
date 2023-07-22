@@ -1,7 +1,7 @@
-/* PLOP_INJECT_IMPORT */
+import { app_strings } from "../../stringRepos/AppStrings/AppStrings.js";
 
-export function helloWorld(name: string) {
-  console.log(`Hello, ${name}`);
+export default function helloWorld(name: string) {
+  console.log(`Howdy Ho ! ${app_strings.t("welcome")}, ${name}`);
 
   return;
 }
