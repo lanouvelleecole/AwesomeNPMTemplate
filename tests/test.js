@@ -11,7 +11,7 @@ const {
   DeleteFileFromCloud,
   GetAPISubscriptionLink,
   GetAPIUsageData,
-} = require("AwesomeNPMTemplate");
+} = require("maslowutils");
 
 const fs = require("fs");
 const path = require("path");
@@ -93,7 +93,7 @@ GetChatGPTArt({
 // pour react native
 const file = {
   // Replace with your file URL/path
-  uri: 'https://via.placeholder.com/256', 
+  uri: 'https://via.placeholder.com/256',
   name: 'image123.jpg',
   type: 'image/jpeg', // Replace with the appropriate file type
 };
@@ -102,7 +102,7 @@ EditChatGPTArt({
   prompt: "Pikachu with blue skin, smoking a cigar",
   apiKey: "95561caf4ddcf9af39d3dfaa474558dc",
   photoData: createFileStreamFromFilePath(
-    "C:/Users/Shadow/Desktop/AwesomeNPMTemplate/tests/test_files/pika.png"
+    "C:/Users/Shadow/Desktop/maslowutils/tests/test_files/pika.png"
   ),
   // pour react native
   // photoData: file,
@@ -135,7 +135,7 @@ function createFileStreamFromFilePath(filePath) {
 // pour react native
 const file = {
   // Replace with your file URL/path
-  uri: 'https://via.placeholder.com/256', 
+  uri: 'https://via.placeholder.com/256',
   name: 'image123.jpg',
   type: 'image/jpeg', // Replace with the appropriate file type
 };
@@ -143,7 +143,7 @@ const file = {
 UploadFileToCloud({
   apiKey: "95561caf4ddcf9af39d3dfaa474558dc",
   fileData: createFileStreamFromFilePath(
-    "C:/Users/Shadow/Desktop/AwesomeNPMTemplate/tests/test_files/pika.mp4"
+    "C:/Users/Shadow/Desktop/maslowutils/tests/test_files/pika.mp4"
   ),
   // pour react native
   // fileData: file,

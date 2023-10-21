@@ -1,4 +1,4 @@
-const chatModels = ["gpt-4" /*"gpt-4-32k"*/, "gpt-3.5-turbo"];
+const chatModels = ["gpt-4", "gpt-4-32k", "gpt-3.5-turbo"];
 const completionModels = ["text-davinci-003"];
 
 /**
@@ -26,5 +26,5 @@ export const Constants = {
 
   // l'url de debug de production (l'url du serveur Linode)
   // for ze world wide web
-  api_base_url_web: "https://maslow-gpt.io",
+  api_base_url_web: "https://your_empire_url.com",
 };

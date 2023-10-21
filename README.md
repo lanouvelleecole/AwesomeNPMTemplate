@@ -1,8 +1,8 @@
-# AwesomeNPMTemplate
+# maslowutils
 
 An npm package for demonstration purposes using TypeScript to build for both the ECMAScript Module format (i.e. ESM or ES Module) and CommonJS Module format (CJS). It can be used in Node.js and browser applications.
 
-Now it's time to make it yours !!
+Now it's time to make it yours !!!
 
 ## Get Started
 
@@ -81,7 +81,7 @@ npm run build; npm version patch --no-git-tag-version; npm publish --registry ht
 Une fois publié, tu peux l'installer la ou tu veux
 
 ```
-npx yarn add AwesomeNPMTemplate@latest
+npx yarn add maslowutils@latest
 ```
 
 ## pour retourner en mode npm 'normal'

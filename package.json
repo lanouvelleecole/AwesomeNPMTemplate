@@ -1,6 +1,6 @@
 {
-  "name": "AwesomeNPMTemplate",
-  "version": "1.7.34",
+  "name": "maslowutils",
+  "version": "0.0.1",
   "type": "module",
   "description": "An npm package for demonstration purposes using TypeScript to build for both the ECMAScript Module format (i.e. ESM or ES Module) and CommonJS Module format. It can be used in Node.js and browser applications.",
   "exports": {
@@ -21,6 +21,8 @@
     "lib/**/*"
   ],
   "scripts": {
+    "first-push": "npm run git-init && git add . && git commit -m \"first commit\" && git branch -M main && git remote add origin <YOUR_GITHUB_URL> && git push -u origin main",
+    "git-init": "rimraf .git && git init",
     "clean": "rimraf ./lib",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && rename lib\\esm\\index.js index.mjs",
@@ -29,7 +31,8 @@
     "semantic-release": "semantic-release",
     "prepack": "npm run build",
     "publish:test": "npm run build && npm version patch --no-git-tag-version && npm publish --registry http://localhost:4873",
-    "publish:production": "npm run build && npm version patch --no-git-tag-version && npm publish"
+    "publish:production": "npm run build && npm version patch --no-git-tag-version && npm publish",
+    "push": "(git add . && git commit -m \"I'm a bigger pusher than Ice-T homie !!!\" && git push) || exit 0"
   },
   "release": {
     "branches": [
@@ -41,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/snyk-labs/AwesomeNPMTemplate.git"
+    "url": "https://github.com/lanouvelleecole/maslowutils.git"
   },
   "keywords": [
     "npm",
@@ -59,9 +62,9 @@
   "author": "John Doe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/snyk-labs/AwesomeNPMTemplate/issues"
+    "url": "https://github.com/lanouvelleecole/maslowutils/issues"
   },
-  "homepage": "https://github.com/snyk-labs/AwesomeNPMTemplate#readme",
+  "homepage": "https://github.com/lanouvelleecole/maslowutils#readme",
   "devDependencies": {
     "@types/i18n-js": "^3.8.4",
     "move-cli": "^2.0.0",
