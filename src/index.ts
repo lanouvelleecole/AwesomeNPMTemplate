@@ -12,6 +12,7 @@
 //import EditChatGPTArt from "./services/EditChatGPTArt/EditChatGPTArt.js";
 //import GetAPIUsageData from "./services/GetAPIUsageData/GetAPIUsageData.js";
 import GetAPISubscriptionLink from "./services/GetAPISubscriptionLink/GetAPISubscriptionLink.js";
+import Buy5KAPICreditsLink from "./services/Buy5KAPICreditsLink/Buy5KAPICreditsLink.js";
 
 export default {
   /* PLOP_INJECT_SDK_METHOD */
@@ -28,4 +29,5 @@ export default {
   //EditChatGPTArt,
   //GetAPIUsageData,
   GetAPISubscriptionLink,
+  Buy5KAPICreditsLink,
 };

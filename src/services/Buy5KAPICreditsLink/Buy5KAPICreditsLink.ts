@@ -1,9 +1,11 @@
 import { app_strings } from "../../stringRepos/AppStrings/AppStrings.js";
 import axios from "axios";
+
 import { Constants } from "../../constants/constants.js";
 import { RunIfPossible } from "../RunIfPossible/RunIfPossible.js";
 
-export default async function GetAPISubscriptionLink({
+export default async function Buy5KAPICreditsLink({
+  apiKey,
   params,
   onSuccess,
   onError,
@@ -13,13 +15,13 @@ export default async function GetAPISubscriptionLink({
   onError?: (error: Error) => void;
   print?: boolean;
   params?: any
+  apiKey: string
 }): Promise<any | null> {
   try {
     // debugger;
 
-
     const response = await axios.post(
-      `${Constants.api_base_url_web}/checkout`,
+      `${Constants.api_base_url_web}/checkout5000?apiKey=${apiKey}`,
       params,
     );
 
