@@ -1,15 +1,17 @@
 
 /* PLOP_INJECT_IMPORT */
 
-import "intl-pluralrules";
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+/* PLOP_INJECT_IMPORT */
+import { I18n } from 'i18n-js';
 
-//empty for now
-const resources = {
-  src: {
-    // Language resource for "src" language
-    translation: {
+/**
+ *
+ * Cette fonction initialise les parmètres par défaut du répertoire de strings.
+ * Cette fonction retourne le répertoire de strings, loaded et initialized.
+ * */
+const AppStrings = () => {
+  const i18n = new I18n({
+    src: {
       /* PLOP_INJECT_SRC_STRING */
       "xhpzrpkYg": "The program:",
       "xl4Ab8WU": "\"File upload in progress! Please wait, darling...\"",
@@ -29,23 +31,37 @@ const resources = {
       "xlqZy0Sf": "Text translation successful!",
       "xlqky0Sfn3": "Unable to translate this text",
       "xlqkylp0Sfn3": "An error has occurred",
-
+      
       /* PLOP_INJECT_SRC_END */
     },
-  },
-  /* PLOP_INJECT_INTL_STRINGS */
+    /* PLOP_INJECT_INTL_STRINGS */
+  });
+
+  // Set the locale once
+  // at the beginning of your app.
+  i18n.locale = Intl.DateTimeFormat().resolvedOptions().locale;
+  i18n.defaultLocale = 'src';
+
+  // When a value is missing from a language,
+  // it'll fallback to another language with the key present.
+  i18n.enableFallback = true;
+
+  return i18n;
 };
 
-i18n.use(initReactI18next).init({
-  lng: 'en', // if you're using a language detector, do not define the lng option
-  resources,
-  //language to use if translations in user language are not available
-  fallbackLng: "src",
-  interpolation: {
-    escapeValue: false, // not needed for react!!
-  },
-});
+/**
+ *
+ * Bonjour, Holà, Hello,
+ *
+ * Ci dessous, se trouve une bibliothèque de strings
+ * multilingues.
+ *
+ * ce petit bébé, nommé i18n,
+ * contient les strings, ze graal, ze caviar kush champagne !
+ * cet objet est destiné à être exporté et réutilisé
+ * partout dans ton application !
+ *
+ */
+const app_strings = AppStrings();
 
-const app_strings = i18n;
-
-export { app_strings };
+export { AppStrings, app_strings };

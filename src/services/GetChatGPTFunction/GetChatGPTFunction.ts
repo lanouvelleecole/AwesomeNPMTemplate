@@ -37,7 +37,7 @@ export default async function GetChatGPTFunction({
     print && console.log(app_strings.t("xKMRBTG"), model_chosen);
 
     const response = await axios.post(
-      `${Constants.api_base_url_web}/get_gpt_func?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/get_gpt_func?apiKey=${apiKey}`,
       {
         model_chosen,
         functionName,

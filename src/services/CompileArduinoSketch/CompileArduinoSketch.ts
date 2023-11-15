@@ -41,7 +41,7 @@ export default async function CompileArduinoSketch({
     // but instead
     // send an object like this: { prop1, prop2, .... }
     const response = await axios.post(
-      `${Constants.api_base_url_web}/compile_arduino_sketch?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/compile_arduino_sketch?apiKey=${apiKey}`,
       { code_string: codeString }
     );
 

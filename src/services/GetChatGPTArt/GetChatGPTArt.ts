@@ -27,7 +27,7 @@ export default async function GetChatGPTArt({
     print && console.log(app_strings.t("xKMRBTG"), model_chosen);
 
     const response = await axios.post(
-      `${Constants.api_base_url_web}/get_gpt_art?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/get_gpt_art?apiKey=${apiKey}`,
       { model_chosen, prompt, params }
     );
 

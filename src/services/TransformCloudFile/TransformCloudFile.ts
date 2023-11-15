@@ -84,7 +84,7 @@ export default async function TransformCloudFile({
 
     // Send the POST request with the FormData
     const response = await axios.post(
-      `${Constants.api_base_url_web}/transform_cloud_file?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/transform_cloud_file?apiKey=${apiKey}`,
       { publicId, transformations, deliveryType, assetType, version, fileExtension }
     );
 

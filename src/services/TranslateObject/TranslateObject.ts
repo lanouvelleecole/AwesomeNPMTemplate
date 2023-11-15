@@ -37,7 +37,7 @@ export default async function TranslateObject({
     print && console.log(app_strings.t("xKMRBTG"), model_chosen);
 
     const response = await axios.post(
-      `${Constants.api_base_url_web}/translate_obj?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/translate_obj?apiKey=${apiKey}`,
       { model_chosen, obj, language, retries }
     );
 

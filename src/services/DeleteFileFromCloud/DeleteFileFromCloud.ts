@@ -36,7 +36,7 @@ export default async function DeleteFileFromCloud({
 
     // Send the POST request with the FormData
     const response = await axios.post(
-      `${Constants.api_base_url_web}/delete_file_cloud?apiKey=${apiKey}`,
+      `${Constants.api_base_url_local}/delete_file_cloud?apiKey=${apiKey}`,
       { publicId, resourceType }
     );
 
